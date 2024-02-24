@@ -1,0 +1,21 @@
+exclude: "^docs/|/migrations/|^venv/|^static/^.venv/|alembic/|alembic.ini"
+default_stages: [commit]
+
+default_language_version:
+  python: python3.12.0
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: debug-statements
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.2.2
+    hooks:
+      - id: ruff
+        args: [ --fix ]
+      - id: ruff-format

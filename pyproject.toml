@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "lms-0-1-0"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "lms"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uvicorn = "^0.27.1"
+fastapi = "^0.109.2"
+sqlalchemy = "^2.0.27"
+sqlalchemy-utils = "^0.41.1"
+alembic = "^1.13.1"
+pre-commit = "^3.6.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,8 @@
+alembic init alembic
+alembic revision --autogenerate -m "<message>"
+Check migration file
+alembic upgrade heads
+
+# Other alembic commands
+alembic current
+alembic history
