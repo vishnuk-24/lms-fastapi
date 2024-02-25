@@ -1,5 +1,4 @@
 from datetime import datetime
-from typing import Optional
 
 from pydantic import BaseModel
 
@@ -7,7 +6,6 @@ from pydantic import BaseModel
 class UserBase(BaseModel):
     email: str
     role: int
-    bio: Optional[str]
 
 
 class UserCreate(UserBase):
@@ -21,6 +19,6 @@ class User(UserBase):
     updated_at: datetime
 
     # convert orm objects to dict
-    # Allow sqlalchemy and pydantic to work together
+    # Allow SQLAlchemy and pydantic to work together
     class Config:
         orm_mode = True
