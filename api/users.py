@@ -7,7 +7,7 @@ from db.db import get_db
 from pydantic_schemas.user import User, UserCreate
 from pydantic_schemas.course import Course
 
-from .utils.course import get_user_courses
+from .utils.courses import get_user_courses
 from .utils.users import get_user, get_user_by_email, get_users, create_user
 
 router = APIRouter()
