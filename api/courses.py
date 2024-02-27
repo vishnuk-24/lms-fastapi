@@ -8,7 +8,7 @@ from db.db import get_db
 from pydantic_schemas.course import Course, CourseCreate
 from pydantic_schemas.section import Section
 
-from .utils.course import (
+from .utils.courses import (
     get_course,
     get_courses,
     create_course,
