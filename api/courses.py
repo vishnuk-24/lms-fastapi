@@ -18,7 +18,7 @@ from .utils.courses import (
 )
 
 
-router = APIRouter()
+router = APIRouter(tags=["courses"])
 
 
 @router.get("/courses", response_model=List[Course])

@@ -8,7 +8,7 @@ from .utils.sections import get_section, read_section_content_block
 from .utils.content_blocks import get_content_block
 
 
-router = APIRouter()
+router = APIRouter(tags=["sections"])
 
 
 @router.get("/sections/{section_id}", response_model=Section)
