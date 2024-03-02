@@ -17,6 +17,7 @@ class User(TimeStamp, Base):
 
     id = Column(Integer, primary_key=True, index=True)
     email = Column(String(100), unique=True, index=True, nullable=False)
+    hashed_password = Column(String)
     role = Column(Enum(Role))
     is_active = Column(Boolean, default=False)
 
